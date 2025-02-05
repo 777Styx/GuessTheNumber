@@ -21,13 +21,13 @@
         app:srcCompat="@drawable/ic_eyeball" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtTheEye"
         android:layout_width="109dp"
         android:layout_height="44dp"
+        android:background="@color/white"
         android:text="The Eye"
         android:textColor="@color/teal_700"
         android:textSize="30dp"
-        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
@@ -36,13 +36,13 @@
         app:layout_constraintVertical_bias="0.35" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtGenerate"
         android:layout_width="263dp"
         android:layout_height="42dp"
         android:background="@color/white"
-        android:textSize="20dp"
         android:text="Tap on generate to start"
         android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,9 +52,9 @@
         android:id="@+id/btnDown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/mustrad"
         android:text="Down"
         android:textColor="@color/black"
-        android:backgroundTint="@color/mustrad"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.161"
@@ -66,8 +66,9 @@
         android:id="@+id/btnUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Up"
         android:backgroundTint="@color/mustrad"
+        android:text="Up"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.838"
@@ -81,11 +82,25 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/orange"
         android:text="Generate"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.782" />
+
+    <Button
+        android:id="@+id/btnGuessed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
